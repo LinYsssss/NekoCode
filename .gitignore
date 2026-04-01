@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local config (DO NOT commit credentials!)
+.credentials.json
+*.credentials*
+.env
+.env.*
+
+# Internal dev notes
+cc.md
+
+# Package tarballs
+*.tgz
