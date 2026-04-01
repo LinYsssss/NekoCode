@@ -5,6 +5,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-brightgreen?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-1900%2B_files-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![LinuxDo](https://img.shields.io/badge/LinuxDo-社区-blue?style=for-the-badge&logo=discourse&logoColor=white)](https://linux.do)
 
 **你的终端 AI 编程伙伴**
 
@@ -126,9 +127,6 @@ NekoCode/
 - [ ] 完善 macOS 凭据隔离
 - [ ] 优化 Provider 管理体验
 
-## 🔗 友链
-
-[![LinuxDo](https://img.shields.io/badge/LinuxDo-社区-blue?style=for-the-badge&logo=discourse&logoColor=white)](https://linux.do)
 
 ## 📄 许可证
 

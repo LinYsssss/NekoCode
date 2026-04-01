@@ -5,6 +5,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-brightgreen?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-1900%2B_files-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![LinuxDo](https://img.shields.io/badge/LinuxDo-Community-blue?style=for-the-badge&logo=discourse&logoColor=white)](https://linux.do)
 
 **Your Terminal AI Coding Companion**
 
@@ -131,9 +132,6 @@ The purple-gold theme is defined in [`src/utils/theme.ts`](src/utils/theme.ts):
 - [ ] Full macOS credential isolation
 - [ ] Enhanced provider management UX
 
-## 🔗 Community
-
-[![LinuxDo](https://img.shields.io/badge/LinuxDo-Community-blue?style=for-the-badge&logo=discourse&logoColor=white)](https://linux.do)
 
 ## 📄 License
 
