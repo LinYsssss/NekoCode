@@ -1,129 +1,135 @@
-<p align="center">
-  <pre align="center">
-   /\_/\
-  ( o.o )  ~
-   > ^ <
-  </pre>
-</p>
+<div align="center">
 
-<h1 align="center">NekoCode</h1>
+# 🐱 NekoCode
 
-<p align="center">
-  <strong>Your personal AI coding companion — in the terminal.</strong>
-</p>
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-brightgreen?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-1900%2B_files-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-<p align="center">
-  <a href="./README.zh-CN.md">简体中文</a> · English
-</p>
+**Your Terminal AI Coding Companion**
+
+*A fully hackable AI-powered CLI with multi-provider support,*
+*purple-gold cyberpunk theme, and a cat mascot* 🐾
+
+[简体中文](./README.zh-CN.md) · English
 
 ---
 
-**NekoCode** is a fully customizable AI-powered CLI built from a recovered Claude Code codebase. It's repackaged as a clean npm project you can build, extend, and make your own.
-
-> 🐱 Think of it as your terminal-native AI pair programmer — with a cat mascot, a purple-gold cyberpunk theme, and full provider flexibility.
-
-## ✨ Highlights
-
-| Feature | Description |
-|---------|-------------|
-| 🎨 **Custom Theme** | Purple-gold cyberpunk aesthetic with cat ASCII art |
-| 🔌 **Multi-Provider** | Anthropic, OpenAI-compatible, Bedrock, Vertex — switch freely |
-| 🧠 **In-CLI Setup** | Add providers, enter API keys, select models — all inside the terminal |
-| 📦 **npm-native** | Standard `npm install && npm run build` — no magic required |
-| 🔒 **Isolated Config** | Separate config namespace, can coexist with official Claude CLI |
-| 🛠️ **Fully Hackable** | Fork it, rebrand it, extend it — it's yours |
+</div>
 
 ## 🚀 Quick Start
 
 ```bash
-# Clone and build
-git clone https://github.com/YOUR_USERNAME/NekoCode.git
+git clone https://github.com/LinYsssss/NekoCode.git
 cd NekoCode
 npm install
 npm run build
-
-# Run it
 npm start
-# or
-node dist/cli.js
 ```
+
+## ✨ What is NekoCode?
+
+NekoCode is a fully customizable AI-powered CLI built from a recovered Claude Code codebase, repackaged as a clean npm project you can build, extend, and make your own.
+
+### Key Features
+
+🎨 **Custom Purple-Gold Theme** — Cyberpunk aesthetic with cat ASCII art mascot
+
+🔌 **Multi-Provider Support** — Anthropic, OpenAI-compatible, Bedrock, Vertex
+
+🧠 **In-CLI Provider Setup** — Add API keys, select models, switch providers — all in the terminal
+
+📦 **Standard npm Build** — `npm install && npm run build` — no special tooling
+
+🔒 **Isolated Config** — Separate config namespace, coexists with official Claude CLI
+
+🛠️ **Fully Hackable** — Fork it, rebrand it, extend it however you want
+
+## 🔧 Provider Setup
+
+Use `/model` inside the CLI to configure providers:
+
+```
+1. Choose provider type → Anthropic or OpenAI-compatible
+2. Enter API base URL
+3. Enter API key
+4. Auto-fetch models from /models endpoint (or enter manually)
+5. Activate and start coding!
+```
+
+Display format: `provider-name/model-name`
 
 ## 📦 Install as Global CLI
 
 ```bash
 npm install -g .
 nekocode --help
-nekocode --version
 ```
 
-Or use `npm link` during development.
+Or link during development:
 
-## 🔧 Provider Setup
-
-NekoCode supports multiple AI providers out of the box. Use the `/model` command inside the CLI to:
-
-1. Choose provider type: **Anthropic** or **OpenAI-compatible**
-2. Enter your API base URL
-3. Enter your API key
-4. Auto-fetch available models from `/models`, or enter manually
-5. Activate and start coding
-
-Model display format: `provider/model-name`
-
-## 🗂️ Project Structure
-
-```
-NekoCode/
-├── src/          # TypeScript source (1900+ files)
-├── scripts/      # Build scripts
-├── vendor/       # Vendored dependencies
-├── dist/         # Build output (not tracked)
-├── package.json
-└── README.md
+```bash
+npm link
 ```
 
-## 🏠 Local Storage
+## 🏠 Config Storage
 
-NekoCode uses its own config namespace — no conflicts with the official CLI:
+NekoCode uses its own namespace — zero conflicts:
 
 | Item | Path |
 |------|------|
 | Config directory | `~/.yscli` |
 | Global config | `~/.yscli.json` |
-| Credentials (Win/Linux) | `~/.yscli/.credentials.json` |
+| Credentials | `~/.yscli/.credentials.json` |
 
-> **Note**: macOS Keychain isolation is not yet fully separated.
+## 🗂️ Project Structure
 
-## 🎨 Theming
+```
+NekoCode/
+├── src/           # TypeScript source (1900+ files)
+│   ├── components/  # UI components (LogoV2, etc.)
+│   ├── services/    # API, MCP, analytics
+│   ├── utils/       # Theme, tools, helpers
+│   └── ...
+├── scripts/       # Build scripts
+├── vendor/        # Vendored dependencies
+├── dist/          # Build output (gitignored)
+└── package.json
+```
 
-NekoCode ships with a custom **purple-gold dark theme**:
+## 🎨 Theme Customization
 
-- 💜 Soft purple accents (`rgb(180,120,255)`)
-- ✨ Warm gold highlights (`rgb(220,180,100)`)
-- 🐱 Cat mascot ASCII art
-- 🌈 Matching rainbow colors throughout
+The purple-gold theme is defined in [`src/utils/theme.ts`](src/utils/theme.ts):
 
-Theme colors are defined in `src/utils/theme.ts` — easy to customize.
+| Element | Color |
+|---------|-------|
+| Brand accent | `rgb(180,120,255)` 💜 |
+| Gold highlights | `rgb(220,180,100)` ✨ |
+| Success | `rgb(100,220,160)` 💚 |
+| Error | `rgb(255,95,120)` ❤️ |
+
+## ⚡ Common Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install dependencies |
+| `npm run build` | Build the project |
+| `npm start` | Run the CLI |
+| `npm run clean` | Clean build output |
+| `npm pack` | Create distributable tarball |
 
 ## ⚠️ Known Limitations
 
-- Some internal strings still reference the original Claude branding
+- Some internal strings still reference original Claude branding
 - Certain remote-service features remain in the codebase
 - macOS Keychain namespace isolation is incomplete
-- This is a recovered-source project; behavior may differ from upstream
 
 ## 🛤️ Roadmap
 
 - [ ] Complete branding replacement
-- [ ] Remove/disable remote-only service dependencies
+- [ ] Remove/disable remote-only dependencies
 - [ ] Full macOS credential isolation
 - [ ] Enhanced provider management UX
-- [ ] Plugin system improvements
-
-## 📋 Requirements
-
-- **Node.js** ≥ 18
-- **npm** ≥ 9
 
 ## 📄 License
 
@@ -131,6 +137,6 @@ Theme colors are defined in `src/utils/theme.ts` — easy to customize.
 
 ---
 
-<p align="center">
-  <sub>Built with 💜 and ✨ by the NekoCode community</sub>
-</p>
+<div align="center">
+  <sub>Built with 💜 and ✨</sub>
+</div>
