@@ -126,6 +126,10 @@ NekoCode/
 - [ ] 完善 macOS 凭据隔离
 - [ ] 优化 Provider 管理体验
 
+## 🔗 友链
+
+[![LinuxDo](https://img.shields.io/badge/LinuxDo-社区-blue?style=for-the-badge&logo=discourse&logoColor=white)](https://linux.do)
+
 ## 📄 许可证
 
 [MIT](./LICENSE)

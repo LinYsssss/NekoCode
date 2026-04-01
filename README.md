@@ -131,6 +131,10 @@ The purple-gold theme is defined in [`src/utils/theme.ts`](src/utils/theme.ts):
 - [ ] Full macOS credential isolation
 - [ ] Enhanced provider management UX
 
+## 🔗 Community
+
+[![LinuxDo](https://img.shields.io/badge/LinuxDo-Community-blue?style=for-the-badge&logo=discourse&logoColor=white)](https://linux.do)
+
 ## 📄 License
 
 [MIT](./LICENSE)
